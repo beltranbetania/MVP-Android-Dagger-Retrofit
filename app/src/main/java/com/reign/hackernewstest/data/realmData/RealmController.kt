@@ -3,6 +3,7 @@ package com.reign.hackernewstest.data.realmData
 import android.app.Application
 import com.reign.hackernewstest.data.realmData.RealmController
 import android.app.Activity
+import android.util.Log
 import androidx.fragment.app.Fragment
 import com.reign.hackernewstest.data.networkData.Article
 import io.realm.Realm
@@ -51,17 +52,19 @@ class RealmController(application: Application?) {
         return true
     }
 
-    fun saveArticles( list : List<Article>?): ArrayList<ArticleLocal> {
+    fun saveArticles( listRemote : List<Article>?): ArrayList<ArticleLocal> {
         val list: ArrayList<ArticleLocal> = ArrayList()
         var results: RealmResults<ArticleLocal> = realm
             .where(ArticleLocal::class.java)
             .findAll()
+
             try {
                 realm.beginTransaction()
             } catch (e: Exception) {
             }
 
-        for (articleRemote in list!!) {
+        for (articleRemote in listRemote!!) {
+
             var selectedArticle: List<ArticleLocal> = results.filter { s -> s.objectID == articleRemote.objectID }
 
                 if (selectedArticle.size==0) {
