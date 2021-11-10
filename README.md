@@ -4,7 +4,7 @@ This Android- Kotlin application will cover two design patterns: MVP and Depende
 It will be abstracted by using Retrofit and RxJava2 wich will be used to make requests it as observables.
 
 ### To run the project:
-1. Use Android Studio (v11+ recommended)
+1. Use Android Studio
 
 ### Libraries & Documents:
 
