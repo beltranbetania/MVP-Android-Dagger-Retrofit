@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hacker News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="undo">UNDO</string>
+    <string name="item_removed">Item was removed from the list.</string>
+    <string name="error">An error has occurred!</string>
+    <string name="ok">Agree!</string>
+    <string name="url_title">URL is not avaiable.</string>
+</resources>
