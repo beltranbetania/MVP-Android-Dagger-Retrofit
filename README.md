@@ -1,4 +1,4 @@
-# hackerNewsTest
+# MVP-Android-Dagger-Retrofit
 
 This Android- Kotlin application will cover two design patterns: MVP and Dependency Injection
 It will be abstracted by using Retrofit and RxJava2 wich will be used to make requests it as observables.
